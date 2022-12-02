@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example website</title>
+    <style>
+      button{
+        background-color: gray;
+        font-size: 50px;
+        position: absolute;
+          left: 50%;
+          top: 20%;
+      }
+      div{
+       
+        font-size: 20px;
+        position: absolute;
+          left: 50%;
+          top: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button" onclick="clickButton()">Click me</button>
+    <div>
+      <ul id="group1">Group 01
+        <li>test 1</li>
+        <li>test 2</li>
+        <li>test 3</li>
+      </ul>
+      <ul id="group2">Group 02
+        <li>dev 1</li>
+        <li>dev 2</li>
+        <li>dev 3</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+          function clickButton() {
+            document.getElementById("button").textContent = "Clicked";
+        }
+  </script>
+</html>
